@@ -1,0 +1,242 @@
+@import url("https://rsms.me/inter/inter.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Generated colors */
+@layer base {
+  :root {
+    --accent: 240 6% 90% / 0.6;
+    --accent-foreground: 240 6% 10%;
+    --background: 240 5% 96%;
+    --border: 240 5% 84% / 0.6;
+    --card: 0 0 98%;
+    --card-foreground: 240 5% 26%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0 100%;
+    --foreground: 240 5% 34%;
+    --foreground-accent: 240 6% 10%;
+    --info: 201 94% 86%;
+    --input: 0 0 98% / 0.85;
+    --link: 239 84% 67%;
+    --muted: 240 5% 84% / 0.6;
+    --muted-foreground: 0 0 100%;
+    --overlay: 240 5% 34% / 0.4;
+    --popover: 0 0 100%;
+    --popover-foreground: 240 5% 26%;
+    --primary: 240 6% 10%;
+    --primary-foreground: 0 0 100%;
+    --ring: 240 5% 65%;
+    --secondary: 240 6% 90%;
+    --secondary-foreground: 240 5% 26%;
+    --success: 142 69% 58%;
+    --states-accent-selected: 240 5% 84% / 0.6;
+    --states-border-hover: 240 5% 65%;
+    --states-destructive-hover: 0 72% 51%;
+    --states-foreground-hover: 240 4% 16%;
+    --states-link-hover: 243 75% 59%;
+    --states-primary-hover: 240 5% 26%;
+    --states-secondary-hover: 240 5% 84%;
+  }
+
+  .dark {
+    --accent: 0 0 100%;
+    --accent-foreground: 0 0 100%;
+    --background: 217 33% 17%;
+    --border: 0 0 100%;
+    --card: 0 0 100%;
+    --card-foreground: 0 0 100%;
+    --destructive: 0 0 100%;
+    --destructive-foreground: 0 0 100%;
+    --foreground: 0 0 100%;
+    --foreground-accent: 0 0 100%;
+    --info: 0 0 100%;
+    --input: 0 0 100%;
+    --link: 0 0 100%;
+    --muted: 0 0 100%;
+    --muted-foreground: 0 0 100%;
+    --overlay: 0 0 100%;
+    --popover: 0 0 100%;
+    --popover-foreground: 0 0 100%;
+    --primary: 210 40% 96%;
+    --primary-foreground: 222 47% 11%;
+    --ring: 0 0 100%;
+    --secondary: 215 19% 35%;
+    --secondary-foreground: 0 0 100%;
+    --success: 0 0 100%;
+    --states-accent-selected: 0 0 100%;
+    --states-border-hover: 0 0 100%;
+    --states-destructive-hover: 0 0 100%;
+    --states-foreground-hover: 0 0 100%;
+    --states-link-hover: 0 0 100%;
+    --states-primary-hover: 214 32% 91%;
+    --states-secondary-hover: 215 25% 27%;
+  }
+}
+
+/* Generated sizes */
+@layer base {
+  :root {
+    --accordion-py: 1rem;
+    --alert-border-width: 0.0625rem;
+    --icon-stroke-width: 0.11249999701976776rem;
+    --alert-gap: 0.125rem;
+    --alert-icon-gap: 0.5rem;
+    --alert-px: 0.625rem;
+    --alert-py: 0.625rem;
+    --alert-border-radius: 0.75rem;
+    --alert-icon-size: 1.25rem;
+    --btn-border-width-md: 0.0625rem;
+    --btn-border-radius-md: 0.5rem;
+    --btn-gap-md: 0.5rem;
+    --btn-py-md: 0.625rem;
+    --btn-px-md: 1rem;
+    --btn-icon-size-md: 1.5rem;
+    --btn-height-md: 2.75rem;
+    --btn-rounded-border-radius-md: 24rem;
+    --btn-border-width-sm: 0.0625rem;
+    --btn-py-sm: 0.375rem;
+    --btn-border-radius-sm: 0.5rem;
+    --btn-gap-sm: 0.5rem;
+    --btn-px-sm: 0.75rem;
+    --btn-icon-size-sm: 1.5rem;
+    --btn-height-sm: 2.25rem;
+    --btn-rounded-border-radius-sm: 24rem;
+    --btn-border-width-xs: 0.0625rem;
+    --btn-gap-xs: 0.125rem;
+    --btn-py-xs: 0.125rem;
+    --btn-border-radius-xs: 0.375rem;
+    --btn-px-xs: 0.375rem;
+    --btn-icon-size-xs: 1rem;
+    --btn-height-xs: 1.75rem;
+    --btn-rounded-border-radius-xs: 24rem;
+    --card-border-radius-md: 1rem;
+    --card-px-md: 1.5rem;
+    --card-py-md: 1.5rem;
+    --card-border-radius-sm: 0.75rem;
+    --card-px-sm: 1rem;
+    --card-py-sm: 1rem;
+    --cntxt-menu-border-width: 0.0625rem;
+    --cntxt-menu-px: 0.25rem;
+    --cntxt-menu-py: 0.25rem;
+    --cntxt-menu-border-radius: 0.5rem;
+    --dialog-border-width: 0.0625rem;
+    --dialog-border-radius: 1rem;
+    --dialog-px: 1.5rem;
+    --dialog-py: 1.5rem;
+    --dropdown-border-radius: 0.375rem;
+    --dropdown-py: 0.375rem;
+    --dropdown-gap: 0.5rem;
+    --dropdown-px: 0.5rem;
+    --dropdown-icon-size: 1rem;
+    --input-border-width-md: 0.0625rem;
+    --input-border-radius-md: 0.5rem;
+    --input-gap-md: 0.5rem;
+    --input-py-md: 0.625rem;
+    --input-px-md: 0.75rem;
+    --input-icon-size-md: 1.5rem;
+    --input-height-md: 2.75rem;
+    --input-border-width-sm: 0.0625rem;
+    --input-border-radius-sm: 0.375rem;
+    --input-py-sm: 0.375rem;
+    --input-gap-sm: 0.5rem;
+    --input-px-sm: 0.75rem;
+    --input-icon-size-sm: 1.5rem;
+    --input-height-sm: 2.25rem;
+    --popover-border-radius: 0.375rem;
+    --popover-px: 1rem;
+    --popover-py: 1rem;
+    --selection-size: 1.25rem;
+    --tabs-border-radius: 0.375rem;
+    --tabs-px: 0.375rem;
+    --tabs-py: 0.375rem;
+    --tab-item-border-radius: 0.25rem;
+    --tab-item-gap: 0.25rem;
+    --tab-item-py: 0.375rem;
+    --tab-item-px: 0.75rem;
+    --tooltip-border-radius: 0.375rem;
+    --tooltip-py: 0.375rem;
+    --tooltip-px: 0.75rem;
+    --font-size-h1: 48px;
+    --font-size-h2: 30px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-p: 16px;
+    --font-size-blockquote: 16px;
+    --font-size-table: 14px;
+    --font-size-list: 16px;
+    --font-size-inlineCode: 14px;
+    --font-size-lead: 20px;
+    --font-size-large: 18px;
+    --font-size-small: 14px;
+    --font-size-subtle: 14px;
+    --line-height-h1: 48px;
+    --line-height-h2: 36px;
+    --line-height-h3: 32px;
+    --line-height-h4: 28px;
+    --line-height-p: 28px;
+    --line-height-blockquote: 24px;
+    --line-height-table: 24px;
+    --line-height-list: 24px;
+    --line-height-inlineCode: 20px;
+    --line-height-lead: 28px;
+    --line-height-large: 28px;
+    --line-height-small: 14px;
+    --line-height-subtle: 20px;
+    --letter-spacing-h1: -0.576px;
+    --letter-spacing-h2: -0.225px;
+    --letter-spacing-h3: -0.144px;
+    --letter-spacing-h4: -0.1px;
+  }
+}
+
+/* Manually added vars */
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* BUTTON ICON WIDTH  */
+    --btn-icon-width-xs: 1.75rem;
+    --btn-icon-width-sm: 2.25rem;
+    --btn-icon-width-md: 2.75rem;
+
+    /* BUTTON ICON HEIGHT  */
+    --btn-icon-height-xs: 1.75rem;
+    --btn-icon-height-sm: 2.25rem;
+    --btn-icon-height-md: 2.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground-accent;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+  .ProseMirror {
+    border: none;
+  }
+  .ProseMirror a {
+    color: #3f8cff;
+    border: none;
+  }
+  .ProseMirror a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .tiptap p.is-editor-empty:first-child::before {
+    color: #adb5bd;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+}
+.lucide {
+  stroke-width: 1.33px;
+}
