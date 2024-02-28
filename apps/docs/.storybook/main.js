@@ -1,18 +1,15 @@
-import { dirname, join, resolve } from "path";
-
-function getAbsolutePath(value) {
-  return dirname(require.resolve(join(value, "package.json")));
-}
+import { resolve } from "path";
 
 const config = {
   stories: ["../stories/*.stories.tsx", "../stories/**/*.stories.tsx"],
   addons: [
-    getAbsolutePath("@storybook/addon-links"),
-    getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@storybook/addon-docs"),
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-docs",
+    "storybook-dark-mode",
   ],
   framework: {
-    name: getAbsolutePath("@storybook/react-vite"),
+    name: "@storybook/react-vite",
     options: {},
   },
 
